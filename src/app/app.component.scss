@@ -1,0 +1,27 @@
+.btn {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+  background-color: var(--back-green) !important;
+  padding: 10px 15px;
+
+  border: none;
+
+  &:focus {
+    background-color: var(--back-green) !important;
+    color: #ffffff;
+    border: none;
+  }
+
+  .fa {
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn {
+    right: 10px;
+  }
+}

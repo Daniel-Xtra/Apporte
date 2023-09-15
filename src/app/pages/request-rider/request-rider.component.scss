@@ -1,0 +1,79 @@
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gray-1);
+}
+
+h6 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--black-1);
+  padding-top: 60px;
+}
+
+.card {
+  border: 3px solid var(--back-green);
+
+  &-img-left {
+    width: 35%;
+    background: scroll center url("../../../assets/imgs/rider-img.svg");
+    background-size: cover;
+  }
+}
+
+form {
+  width: 40%;
+
+  input {
+    background: #fafafc;
+    height: 3rem;
+    border: 1px solid var(--btn-yellow);
+    border-radius: 8px;
+    margin: 10px 0;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  .btn-yellow {
+    background-color: var(--btn-yellow);
+    text-transform: capitalize;
+    border-radius: 37px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border: none;
+    outline: none;
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+@media (max-width: 767.98px) {
+  .card {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 30px 0 !important;
+
+    form {
+      width: 100%;
+      margin: 0 !important;
+    }
+  }
+}

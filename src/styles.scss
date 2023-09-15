@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+
+:root {
+  --navbar-green: #013402;
+  --white: #ffffff;
+  --active-yellow: #ffbb00;
+  --btn-yellow: #d49c00;
+  --black-1: #252525;
+  --gray-1: #484848;
+  --gray-2: #0b0e10;
+  --back-green: #013402;
+  --light-green: #ddf8d7;
+  --purple: #4d54ff;
+}
+
+body {
+  font-family: "Manrope", sans-serif !important;
+  background-color: #ffffff;
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 95% !important;
+  }
+}

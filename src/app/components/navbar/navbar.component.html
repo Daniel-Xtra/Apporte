@@ -1,0 +1,48 @@
+<div class="" id="navar">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a routerLink="/home" class="navbar-brand">
+        <img src="assets/imgs/logo-md.svg" class="d-none d-md-flex" />
+        <img src="assets/imgs/logo-mobile.svg" class="d-md-none" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+        aria-expanded="false"
+      >
+        <span class="fa fa-bars"></span>
+        <span class="fa fa-times"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto">
+          <a
+            [routerLink]="['/home']"
+            [routerLinkActive]="['active']"
+            class="nav-item nav-link"
+            >home</a
+          >
+          <a
+            [routerLink]="['/request-rider']"
+            [routerLinkActive]="['active']"
+            class="nav-item nav-link"
+            >request rider</a
+          >
+          <a
+            [routerLink]="['/contact-us']"
+            [routerLinkActive]="['active']"
+            class="nav-item nav-link"
+            >contact us</a
+          >
+          <a
+            [routerLink]="['/about-us']"
+            [routerLinkActive]="['active']"
+            class="nav-item nav-link"
+            >about us</a
+          >
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
