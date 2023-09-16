@@ -252,7 +252,9 @@
 @media (max-width: 767.98px) {
   .hero-header {
     height: auto;
-
+    .row > * {
+      padding: 0rem !important;
+    }
     #row {
       min-height: auto;
       padding: 90px 0;
@@ -271,6 +273,9 @@
     }
   }
   .boundaries {
+    .row > * {
+      padding: 0rem !important;
+    }
     p.text-center {
       font-size: 1.7rem;
     }
@@ -289,6 +294,9 @@
     }
   }
   .possibility {
+    .row > * {
+      padding: 0rem !important;
+    }
     h6 {
       font-size: 1.7rem;
     }
