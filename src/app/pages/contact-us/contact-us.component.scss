@@ -91,3 +91,8 @@ h6 {
     }
   }
 }
+@media (max-width: 767.98px) {
+  .row > * {
+    padding: 0rem !important;
+  }
+}
