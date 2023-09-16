@@ -181,7 +181,7 @@
 
 .newsletter {
   background-color: var(--light-green);
-  padding: 7rem 0;
+  padding: 4rem 0;
   height: max-content;
 
   h6 {
@@ -241,6 +241,14 @@
   }
 }
 
+@media (max-width: 991.98px) {
+  .who {
+    .btn-yellow {
+      margin: 0 0 20px 0 !important;
+    }
+  }
+}
+
 @media (max-width: 767.98px) {
   .hero-header {
     height: auto;
@@ -254,6 +262,40 @@
       }
       p.text-white {
         font-size: 1.2rem;
+      }
+    }
+  }
+  .card-section {
+    p.text-center {
+      font-size: 1.7rem;
+    }
+  }
+  .boundaries {
+    p.text-center {
+      font-size: 1.7rem;
+    }
+  }
+  .who {
+    p.text-center {
+      font-size: 1.7rem;
+    }
+
+    .px-5 {
+      padding: 0rem !important;
+    }
+
+    img {
+      margin-bottom: 30px;
+    }
+  }
+  .possibility {
+    h6 {
+      font-size: 1.7rem;
+    }
+    p {
+      width: 100% !important;
+      &.righter {
+        padding-right: 0rem;
       }
     }
   }

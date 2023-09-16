@@ -48,7 +48,7 @@
     ul {
       display: flex;
       align-items: center;
-      gap: 25px;
+      gap: 15px;
       cursor: pointer;
       font-weight: 400;
       font-size: 0.8rem;
@@ -63,29 +63,10 @@
       }
     }
   }
-
-  .line {
-    display: none;
-  }
-}
-
-@media (max-width: 991.98px) {
-  #line {
-    display: none !important;
-  }
-  .line {
-    display: block !important;
-  }
 }
 
 @media (max-width: 767.98px) {
-}
-
-@media (max-width: 374.98px) {
-  .d-block {
-    width: auto !important;
-  }
-  .right {
-    width: auto !important;
+  .copyright {
+    font-size: 12px !important;
   }
 }
