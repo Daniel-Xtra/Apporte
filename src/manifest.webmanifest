@@ -1,8 +1,8 @@
 {
   "name": "Apporte",
   "short_name": "Apporte",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#013402",
+  "background_color": "#013402",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
