@@ -1,7 +1,7 @@
 <router-outlet></router-outlet>
-<a (click)="scrollToTop()" class="btn back-to-top" id="toper"
+<!-- <a (click)="scrollToTop()" class="btn back-to-top" id="toper"
   ><i class="fa fa-arrow-up" aria-hidden="true"></i
-></a>
+></a> -->
 <div class="w-100 position-absolute top-0" *ngIf="modalVersion">
   <div class="alert alert-secondary m-2">
     <button
@@ -15,13 +15,13 @@
   </div>
 </div>
 <div
-  class="w-100 position-absolute bottom-0"
+  class="w-100 alerter"
   *ngIf="modalPwaPlatform === 'ANDROID' || modalPwaPlatform === 'IOS'"
 >
   <div class="alert alert-secondary m-2">
     <button
       type="button"
-      class="btn-close position-absolute top-0 end-0 m-1"
+      class="btn-close position-absolute"
       aria-label="Close"
       (click)="closePwa()"
     ></button>
@@ -30,7 +30,7 @@
       Add this WEB app to home screen
     </div>
     <!-- iOS with Safari -->
-    <div *ngIf="modalPwaPlatform === 'IOS'">
+    <div *ngIf="modalPwaPlatform === 'IOS'" (click)="addToHomeScreen()">
       To install this WEB app on your device, tap the "Menu" button
       <img
         src="https://res.cloudinary.com/rodrigokamada/image/upload/v1641089482/Blog/angular-pwa/safari_action_button_38x50.png"
