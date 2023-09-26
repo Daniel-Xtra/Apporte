@@ -20,8 +20,21 @@
   }
 }
 
+.alerter {
+  position: fixed;
+  // right: 45px;
+  bottom: 20px;
+  z-index: 99;
+  .btn-close {
+    right: 20px;
+  }
+}
+
 @media (max-width: 767px) {
   .btn {
     right: 10px;
   }
+}
+.ios-menu {
+  width: 14px;
 }
