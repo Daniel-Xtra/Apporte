@@ -7,9 +7,15 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 const routes: Routes = [
   {
+    path: 'home',
+    redirectTo: '',
+    pathMatch: 'full',
+  },
+  {
     path: '',
     component: HomeComponent,
   },
+
   {
     path: 'request-rider',
     component: RequestRiderComponent,
