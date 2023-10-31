@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="container">
+  <div class="container py-5">
     <div class="row">
       <div class="flex-2">
         <img
@@ -18,45 +18,56 @@
         </p>
 
         <ul>
-          <li routerLink="/privacy-policy">
+          <li>
             <img src="assets/icons/whatsapp.svg" />
           </li>
-          <li routerLink="/privacy-policy">
+          <li>
             <img src="assets/icons/twitter.svg" />
           </li>
-          <li routerLink="/privacy-policy">
+          <li>
             <img src="assets/icons/instagram.svg" />
           </li>
         </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
+    <div class="row pb-4">
+      <div class="col-md-12 mb-3">
         <img src="assets/imgs/line.svg" style="width: -webkit-fill-available" />
       </div>
-      <div class="linker col-md-3 col-6">
+
+      <div class="linker col-md-4 col-8">
+        <li>
+          <span><img src="assets/icons/phone.svg" /></span>08036262333
+        </li>
+        <li>
+          <span><img src="assets/icons/dial.svg" /></span>08116660844
+        </li>
+        <li>
+          <span><img src="assets/icons/location.svg" /></span
+          ><span
+            >No 17 Abakaliki -Enugu Road, Abakaliki Ebonyi State Nigeria.</span
+          >
+        </li>
+      </div>
+
+      <div class="linker col-md-4 col-4">
         <li><a routerLink="/about-us">About Us</a></li>
-        <li><a routerLink="/contact-us">Contact Us</a></li>
-        <li><a routerLink="/">Careers</a></li>
+        <li><a routerLink="/request-rider">Request a Rider</a></li>
+        <li><a href="javascript:void(0)">FAQS</a></li>
       </div>
-      <div class="linker col-md-3 col-6">
-        <li><a routerLink="/">FAQs</a></li>
-        <li><a routerLink="/">Newsletter Sign-up</a></li>
-        <li><a routerLink="/">Customer`s Review</a></li>
-      </div>
-      <div class="linker col-md-3 col-6">
-        <li><a routerLink="/">Block a Rider</a></li>
-        <li><a routerLink="/request-rider">Find a Rider</a></li>
-        <li>
-          <a routerLink="/">Search</a>
-        </li>
-      </div>
-      <div class="linker col-md-3 col-6">
-        <li><a routerLink="/">Search a vendor</a></li>
-        <li><a routerLink="/">Search Location</a></li>
-        <li>
-          <a routerLink="/home">Home</a>
-        </li>
+
+      <div class="righter col-md-4 col-12" style="text-align: right">
+        <p>
+          Be the first to know about new releases, company news and insights.
+        </p>
+        <div class="flexer">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="py-2 px-2"
+          />
+          <button class="btn btn-yellow text-white py-2 px-4">Subscribe</button>
+        </div>
       </div>
     </div>
   </div>
