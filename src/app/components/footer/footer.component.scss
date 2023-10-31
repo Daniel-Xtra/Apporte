@@ -1,5 +1,7 @@
 .container-fluid {
-  background: var(--navbar-green);
+  background: url("../../../assets/imgs/footer-bg.svg"), var(--navbar-green);
+  background-position: center;
+  background-size: cover;
   padding: 0px !important;
   width: 100%;
 
@@ -8,15 +10,27 @@
     li {
       list-style-type: none;
       padding: 12px 0px;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
 
       a {
         font-weight: 400;
-        font-size: 0.8rem;
+
         // line-height: 50px;
         color: var(--white);
         cursor: pointer;
-        text-decoration: underline;
+        text-decoration: none;
         text-transform: none !important;
+      }
+
+      span {
+        margin-right: 15px;
+        img {
+          width: 20px;
+        }
       }
     }
   }
@@ -63,10 +77,72 @@
       }
     }
   }
+
+  .righter {
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--white);
+      max-width: 85%;
+      display: inline-block;
+      padding: 12px 0;
+    }
+
+    .flexer {
+      display: flex;
+
+      align-items: end;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: right;
+      input {
+        box-shadow: none;
+        width: 300px;
+        border: 1px solid var(--btn-yellow);
+        border-radius: 2px;
+
+        &:focus {
+          box-shadow: none;
+          border: 1px solid var(--btn-yellow);
+          outline: none;
+        }
+      }
+      .btn-yellow {
+        background-color: var(--btn-yellow);
+        text-transform: capitalize;
+        border-radius: 37px;
+
+        font-weight: 700;
+        font-size: 0.8rem;
+        border: none;
+        outline: none;
+
+        &:focus {
+          border: none;
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767.98px) {
-  .copyright {
-    font-size: 12px !important;
+  .container-fluid {
+    .copyright {
+      font-size: 12px;
+    }
+
+    .righter {
+      p {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .flexer {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
   }
 }

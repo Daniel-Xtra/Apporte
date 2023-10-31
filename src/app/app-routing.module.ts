@@ -28,7 +28,7 @@ const routes: Routes = [
     path: 'about-us',
     component: AboutUsComponent,
   },
-  { path: '**', redirectTo: 'not-found' },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({

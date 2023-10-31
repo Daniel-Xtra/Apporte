@@ -11,12 +11,12 @@
 
   &:focus {
     background-color: var(--back-green) !important;
-    color: #ffffff;
+    color: var(--white);
     border: none;
   }
 
   .fa {
-    color: #ffffff;
+    color: var(--white);
   }
 }
 
