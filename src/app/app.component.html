@@ -18,7 +18,7 @@
   class="w-100 alerter"
   *ngIf="modalPwaPlatform === 'ANDROID' || modalPwaPlatform === 'IOS'"
 >
-  <div class="alert alert-secondary m-2">
+  <div class="alert alert-secondary alert-android m-2">
     <button
       type="button"
       class="btn-close position-absolute"
@@ -26,8 +26,13 @@
       (click)="closePwa()"
     ></button>
     <!-- Android -->
-    <div *ngIf="modalPwaPlatform === 'ANDROID'" (click)="addToHomeScreen()">
-      Add this WEB app to home screen
+    <div
+      class="d-flex"
+      *ngIf="modalPwaPlatform === 'ANDROID'"
+      (click)="addToHomeScreen()"
+    >
+      <img src="assets/icons/icon-48x48.png" class="android-menu m-0" />
+      Add WEB app to home screen
     </div>
     <!-- iOS with Safari -->
     <div *ngIf="modalPwaPlatform === 'IOS'" (click)="addToHomeScreen()">
