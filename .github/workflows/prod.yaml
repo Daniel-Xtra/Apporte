@@ -31,7 +31,7 @@ jobs:
       - name: Format
         run: npm run format
       - name: NPM build Angular Production
-        run: npm run build:prod
+        run: ng build
       # - name: Test
       #   run: npm run test:ci
       # - name: Test coverage
