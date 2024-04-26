@@ -5,7 +5,7 @@
   //   url("../../../assets/imgs/hero-blend-2.svg");
   background-blend-mode: saturation;
   background-size: cover;
-  background-size: cover;
+
   background-color: #ced4da;
   height: 91vh;
 
@@ -86,82 +86,75 @@
     padding-bottom: 10px;
   }
 
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 12%;
-  }
-  h6 {
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--black-1);
-    padding: 10px 0;
-  }
+  .card {
+    background-color: #013402;
+    border-radius: 10px;
+    margin: 10px 0;
+    &-body {
+      padding: 24px;
+      text-align: center;
+      gap: 24px;
+      color: var(--white);
 
-  p.bound {
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--gray-1);
-    padding-bottom: 30px;
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 12%;
+      }
+      h6 {
+        font-weight: 700;
+        font-size: 1.2rem;
+        padding: 10px 0;
+      }
+
+      p.bound {
+        font-size: 1rem;
+        font-weight: 400;
+
+        padding-bottom: 0px;
+      }
+    }
   }
 }
 
-.who {
-  background-color: var(--white);
-  margin-bottom: 20px;
-  p.text-center {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--black-1);
-    // padding-bottom: 10px;
+.vision {
+  background-color: var(--black-1);
 
-    &-2 {
-      text-align: center;
-      color: var(--black-1);
-      font-weight: 400;
-      font-size: 1rem;
+  position: relative;
+  color: var(--white);
+  padding: 60px;
+  img {
+    width: 160px;
+    &.upper_left {
+      position: absolute;
+      top: 1%;
+      left: 1%;
+    }
+    &.lower_right {
+      bottom: 1%;
+      right: 1%;
+      position: absolute;
     }
   }
 
-  img {
-    width: -webkit-fill-available;
-    margin-bottom: 70px;
-  }
-  h6 {
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--black-1);
-    padding: 10px 0;
+  h5 {
+    font-size: 2.4rem;
+    font-weight: 600;
     text-transform: capitalize;
   }
-
   p {
     font-size: 1rem;
     font-weight: 400;
-    color: var(--gray-1);
-  }
-
-  .btn-yellow {
-    background-color: var(--btn-yellow);
-    text-transform: capitalize;
-    border-radius: 37px;
-    padding: 16px;
-    font-weight: 700;
-    font-size: 0.8rem;
-    border: none;
-    outline: none;
-
-    &:focus {
-      border: none;
-      box-shadow: none;
-      outline: none;
-    }
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
   }
 }
 
 .possibility {
-  background-color: var(--back-green);
+  background-color: var(--white);
+  color: var(--black-1);
   h6 {
     font-size: 2rem;
     font-weight: 600;
@@ -176,68 +169,6 @@
   }
   img {
     width: -webkit-fill-available;
-  }
-}
-
-.newsletter {
-  background-color: var(--light-green);
-  padding: 4rem 0;
-  height: max-content;
-
-  h6 {
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--black-1);
-    padding: 10px 0;
-    text-transform: none;
-  }
-
-  p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--gray-1);
-
-    a {
-      color: var(--purple);
-      text-decoration: underline;
-      cursor: pointer;
-    }
-  }
-
-  .flexer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
-    input {
-      box-shadow: none;
-      width: 300px;
-      border: 1px solid var(--btn-yellow);
-      border-radius: 2px;
-
-      &:focus {
-        box-shadow: none;
-        border: 1px solid var(--btn-yellow);
-        outline: none;
-      }
-    }
-    .btn-yellow {
-      background-color: var(--btn-yellow);
-      text-transform: capitalize;
-      border-radius: 37px;
-      padding: 16px;
-      font-weight: 700;
-      font-size: 0.8rem;
-      border: none;
-      outline: none;
-
-      &:focus {
-        border: none;
-        box-shadow: none;
-        outline: none;
-      }
-    }
   }
 }
 
@@ -293,6 +224,23 @@
       margin-bottom: 30px;
     }
   }
+
+  .vision {
+    padding: 60px 20px;
+    img {
+      width: 110px;
+    }
+
+    h5 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      max-width: 100%;
+    }
+  }
+
   .possibility {
     .row > * {
       padding: 0rem !important;
